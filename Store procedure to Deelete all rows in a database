@@ -1,0 +1,9 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+create proc Truncate_table
+as
+begin
+
+Truncate table [Azure Blob Storage file]
+
+
+end
