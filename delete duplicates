@@ -1,0 +1,7 @@
+;WITH CTE AS
+(
+SELECT TOP 1000000 *
+FROM [Azure Blob Storage file]
+ORDER BY predicted_askclose
+)
+DELETE FROM CTE
