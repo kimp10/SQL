@@ -1,0 +1,10 @@
+
+select *, ROW_NUMBER() over( Order By StdId) as Rownumber
+
+from StudentData
+
+and 
+
+select *, ROW_NUMBER() over(Partition By Class Order By StdId) as Rownumber
+
+from StudentData
